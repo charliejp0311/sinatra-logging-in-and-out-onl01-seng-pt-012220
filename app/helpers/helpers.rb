@@ -1,7 +1,7 @@
 class Helpers
-  def is_logged_in?
+  def is_logged_in?(sessions_hash)
     binding.pry
-    !!session[:user_id]
+    !!sessions_hash.include?("user_id")
   end
   def current_user(sessions_hash)
     binding.pry
