@@ -7,8 +7,7 @@
   </head>
   <body id="page-top">
     <h1>Welcome <%=@user.username%></h1>
-    <h3>Ballance ~ </h3>
-    <h4><%=@user.balance%></h4>
+    <h3>Your Balance: <%=@user.balance%></h3>
     <form method="post" action="/logout">
       <button type="submit" value="Log Out"></button>
     </form>
